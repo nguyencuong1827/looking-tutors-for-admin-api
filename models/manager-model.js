@@ -108,31 +108,6 @@
 // }
 
 const bcrypt = require('bcryptjs');
-const FileAPI = require('file-api');
-const File = FileAPI.File;
-const firebaseConfig = require('../config-firebase')
-const firebase = require('firebase');
-require('firebase/storage');
-firebase.initializeApp(firebaseConfig);
-
-
-
-const upload = (url, username) =>{
- 
-  const file = new File(url);
-  console.log(file);
-  // Create a root reference
-  const storageRef = firebase.storage().ref();
-  var fileBlob = URL.createObjectURL(url)
-  // Create the file metadata
-  const metadata = {
-    contentType: 'image/*'
-  };
-  storageRef.child('images/' + username ).put(fileBlob, metadata);
-}
-
-
-
 
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
