@@ -253,6 +253,5 @@ module.exports = {
   validPassword: validPassword,
   checkUsername: checkUsername,
   updateInfo: updateInfo,
-  changePassword: changePassword,
-  upload: upload
+  changePassword: changePassword
 };
