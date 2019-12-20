@@ -22,7 +22,8 @@ app.set('view engine', 'hbs');
 
 dotenv.config();
 
-//Kết nối cơ sở dữ liệu
+
+//Kết nối cơ sở dữ liệu mongoose
 var mongoose = require('mongoose');
 mongoose.Promise = Promise;
 const option = {
