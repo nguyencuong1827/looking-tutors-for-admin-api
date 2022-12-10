@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "file-api": "^0.10.4",
     "firebase": "^7.6.0",
     "gridfs-stream": "^1.1.1",
